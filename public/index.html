@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Please enter student name and date.</p>
+    <form method="POST" action="pdfMake\pdf">
+      <label for="txtName">Student Name: </label>
+      <textarea rows="20" type="text" id="txtFirstName" name="name"></textarea>
+      <br />
+      <br />
+      <label for="txtDate">Date: </label>
+      <input type="text" id="txtLastName" name="date" />
+      <br />
+      <br />
+      <select name="program">
+        <option value="progA">Program A</option>
+        <option value="progB">Program B</option>
+        <option value="progC">Program C</option>
+        <option value="progD">Program D</option>
+      </select>
+      <br />
+      <br />
+      <button type="submit">Create Pdf</button>
+    </form>
+  </body>
+</html>
